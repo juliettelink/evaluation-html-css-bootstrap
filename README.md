@@ -9,3 +9,8 @@ Evaluation html/css/boostrap
 - la deuxieme page est en cours je vais la changer (j 'ai pour le moment un tableau boostrap) je souhaite mettre un des evenements utilisant les "card" booststrap et faire un formulaire.
 - enfin il reste à faire le footer.
 
+
+    deuxième commit le 21/03/2023
+- ajout de photo et de card dans la page 2
+- rectification et amelioration sur index
+- reste à ameliorer le tableau des evenements, le logo et le fooster.
