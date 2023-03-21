@@ -11,7 +11,7 @@ ul, ol {
 }
 
 * {
-    margin:0;
+    margin: auto;
     padding:0;
     box-sizing: border-box;
 }
@@ -83,15 +83,15 @@ ul, ol {
 }
 
 @media screen and (max-width: 1032px) {
-    .header {
-        padding: 100px 150px;
-    }
+
     .header .menu-hamburger {
         display: block;
         margin-right: 40px;
     }
 
     .logo {
+        top: 20px;
+        left:0;
         position: absolute;
         width: 8rem;
     }
@@ -132,11 +132,12 @@ ul, ol {
 
 .presentation-asso {
     display: flex; 
+    gap:40px;
     align-items: center;
     background: linear-gradient(#235218, #9198e5);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 887px) {
     .presentation-asso {
         flex-direction: column;
     }
@@ -165,16 +166,19 @@ ul, ol {
 /* END presentation de l'association*/
 
 
-.fa-trowel {
+.truelle {
     width: 200px;
     padding-top: 60px;
-    
+    padding-bottom: 60px;
+    display: flex; 
+    gap: 40px;
 }
+
 
 /* Start presentation ateliers*/
 
 .bloc-2 {
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -215,11 +219,11 @@ ul, ol {
     position: absolute;
     bottom: 0;
     left: 5px;
-    background-color: rgba(0,140,186,0.8);
+    background-color: rgba(46, 107, 128, 0.7);
     overflow: hidden;
     width: 290px;
     height: 0;
-    transition: .25s ease;
+    transition: .1s ease;
     text-align: center;
 }
 
@@ -227,7 +231,7 @@ ul, ol {
     position: absolute;
     left: 50px;
     top: 5px;
-    color: rgb(48, 41, 66);
+    color: rgb(15, 13, 19);
     font-size: 20px;
     width: 50px;
     height: 50px;
@@ -238,3 +242,17 @@ ul, ol {
     height: 30%;
 }
 
+/*PAGE 2*/
+.presentation-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .presentation-card{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+}
