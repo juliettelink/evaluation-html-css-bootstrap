@@ -14,3 +14,7 @@ Evaluation html/css/boostrap
 - ajout de photo et de card dans la page 2
 - rectification et amelioration sur index
 - reste à ameliorer le tableau des evenements, le logo et le fooster.
+
+     troisième commit  le 09/04/2023
+- dernier réglage
+- encore un soucis avec un <button> et <a> je ne vois pas comment faire autrement.
