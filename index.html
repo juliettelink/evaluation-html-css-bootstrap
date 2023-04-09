@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'association Arkéo</title>
+    <meta name="description" content="association d'archéologie : animation auprès des enfants sur le thème de l'archéologie avec une spécialisation sur la préhistoire">
+    <title>L'association Arkéo : animation </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -12,27 +13,32 @@
 </head>
 <body>
     <!--START header: logo et menu-->
-    <header class="flux header">
-        <a href="index.html" target="_target">
+    <header id="header" class="flux header">
+        <a href="index.html" target="_blank">
             <img class="logo" src="LOGO.JPEG" alt="logo de l'association">
         </a>
         <nav class="nav">
             <ul class="list-links">
                 <li class="nav-link">
-                    <a href="#" target="_self"> Accueil </a>
+                    <a href="#welcome" target="_self"> Accueil </a>
                 </li>
                 <li class="nav-link">
-                    <a href="#" target="_self"> Action </a>
+                    <a href="#portofolio" target="_self"> Portfolio </a>
                 </li>
                 <li class="nav-link">
-                    <a href="#" target="_self"> Lieux </a>
+                    <a href="#place" target="_self"> Lieux </a>
                 </li>
                 <li class="nav-link">
-                    <a href="#" target="_self"> Contact </a>
+                    <a href="#contact" target="_self"> Contact </a>
                 </li>
                 <li class="nav-link">
-                    <button class="btn btn-primary"><a href="page2.html" target="_self"><i class="fa-regular fa-calendar-days"></i> Evénement </a></button>
-                </li>
+                    <button class="btn btn-primary">
+                        <a href="page2.html" target="_self">
+                            <i class="fa-regular fa-calendar-days">
+                            </i> Evénement 
+                        </a>
+                    </button>
+                </li> 
             </ul>
         </nav>
         <img src="menu-line.png" alt="menu hamburger" class="menu-hamburger">
@@ -41,7 +47,7 @@
 
     <main>
         <!--START presentation de l'association-->
-        <section class=" flux presentation-asso">
+        <section id="welcome" class=" flux presentation-asso">
             <img class="photo-presentation" src="/image/presentation/etioll22.jpg" alt="photo de présentaion">
             <div class="bloc-1">
                 <h2 class="titre-presentation">Présentation de l'association :</h2>
@@ -52,8 +58,8 @@
             </div>
         </section>
         <!--END présentation de l'asso-->
-        <!--START présentation de l'activité-->
-        <section class="flux presentation-atelier">
+        <!--START carousel-->
+        <section id="portofolio" class="flux presentation-atelier">
             <div class="truelle">
                 <i class="fa-solid fa-trowel"></i>
                 <i class="fa-solid fa-trowel"></i>
@@ -101,9 +107,10 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </section>
-        <section class="flux lieux">
+        <!--END carousel-->
+        <!--START lieux d'action-->
+        <section id="place" class="flux lieux">
             <div class="truelle">
                 <i class="fa-solid fa-trowel"></i>
                 <i class="fa-solid fa-trowel"></i>
@@ -117,7 +124,6 @@
                     <figcaption class="overlay-1">
                         <h4>Les écoles</h4>
                         <p> en scolaire ou en périscolaire</p>
-                        <i class="fa-solid fa-school"></i>
                     </figcaption>
                 </figure>
                 <figure class="container">
@@ -147,18 +153,51 @@
                 <figure class="container">
                     <img class="folio" src="image/lieux/104.jpg" alt="ecoles">
                     <figcaption class="overlay-1">
-                        <h4>lieux culturels</h4>
+                        <h4>Les lieux culturels</h4>
                     </figcaption>
                 </figure>
-
             </div>  
         </section>
-
+    <!--END lieux d'action-->
+    <!--START Formulaire-->
+        <aside class="next-form">
+            <a href="#header" target="_self">
+                <img src="icones/arrow-up-circle-line.png" alt="arrow">
+            </a>
+            <h2>Nous contacter</h2>
+            <p>Association Arkéo</p>
+            <p> 32 rue Mopino</p>
+            <p> 94200 Ivry-sur-Seine</p><br>
+            <p>Par téléphone : 01 45 45 45 45</p>
+            <p>ou via ce formulaire de contact</p>
+            <form>
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">e-mail : </label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div class="msg">
+                    <label for="msg">Message : </label>
+                    <textarea id="msg" name="user_message" rows="5" ></textarea>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary">Envoyer le message</button>
+                </div>
+            </form>
+        </aside>
     </main>
-    <footer>
-
-
-
+    <footer id="contact" class="footer">
+        <p>@2022</p>
+        <a href="https://www.facebook.com/profile.php?id=100089123355279" target="_blank">
+            <img src="icones/facebook-circle-fill.png" alt="facebook">
+        </a>
+        <img src="icones/instagram-fill.png" alt="instagram">
+        <img src="icones/twitter-fill.png" alt="twitter">
+        
+    
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -172,5 +211,6 @@
         })
     </script>
 </body>
+
 
 </html>

@@ -16,6 +16,11 @@ ul, ol {
     box-sizing: border-box;
 }
 
+h2{
+    padding: 50px;
+    font-weight: bold;
+}
+
 /* style général */
 
 * {
@@ -61,18 +66,18 @@ ul, ol {
     
 }
 
-.nav-links {
-    font-size: 14px
+a, .fa-trowel {
+    color: rgb(73, 155, 155);
 }
 
 .btn-primary {
-    background-color: rgb(67, 104, 104);
-    border: 1px solid  rgb(67, 104, 104);
+    background-color: rgb(139, 168, 168);
+    border: 1px solid  rgb(73, 155, 155);
 }
 
 .btn-primary:hover, .btn-primary:active{
-    background-color: rgb(73, 155, 155) !important;
-    border: 1px solid  rgb(73, 155, 155) !important;
+    background-color: #256868 !important;
+    border: 1px solid  #256868 !important;
 }
 
 .header .menu-hamburger {
@@ -82,7 +87,7 @@ ul, ol {
     right: 50px;
 }
 
-@media screen and (max-width: 1032px) {
+@media screen and (max-width: 700px) {
 
     .header .menu-hamburger {
         display: block;
@@ -90,10 +95,10 @@ ul, ol {
     }
 
     .logo {
-        top: 20px;
-        left:0;
+        top: 60px;
+        left:40px;
         position: absolute;
-        width: 8rem;
+        width: 6rem;
     }
 
     .nav { 
@@ -129,12 +134,15 @@ ul, ol {
 
 /* END header*/
 /* START Presentation asso*/
-
+.presentation-asso, form, .overlay-1{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.7) 0%, rgba(167,201,205,0.7) 40%, rgba(22,105,136,0.7) 100%);
+}
 .presentation-asso {
     display: flex; 
     gap:40px;
     align-items: center;
-    background: linear-gradient(#235218, #9198e5);
+    
 }
 
 @media (max-width: 887px) {
@@ -154,7 +162,7 @@ ul, ol {
 
 .titre-presentation, .presentation-atelier, .lieux {
     margin-bottom: 40px;
-    text-align: center;
+    text-align : center;
     
 }
 
@@ -218,13 +226,14 @@ ul, ol {
 .overlay-1 {
     position: absolute;
     bottom: 0;
-    left: 5px;
-    background-color: rgba(46, 107, 128, 0.7);
+    left: 17px; 
     overflow: hidden;
     width: 290px;
     height: 0;
     transition: .1s ease;
     text-align: center;
+    color:rgb(233, 233, 240);
+    font-weight: bold;
 }
 
 .fa-school {
@@ -241,6 +250,26 @@ ul, ol {
 .container:hover .overlay-1 {
     height: 30%;
 }
+/* le formulaire*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.msg{
+    margin-left: 25px;
+    
+}
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /*PAGE 2*/
 .presentation-card{
@@ -256,3 +285,8 @@ ul, ol {
     }
     
 }
+
+.next-form {
+    text-align: center;
+}
+
