@@ -1,0 +1,292 @@
+/* reset*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+* {
+    margin: auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h2{
+    padding: 50px;
+    font-weight: bold;
+}
+
+/* style général */
+
+* {
+    font-family: 'cabin', sans-serif;
+    
+}
+
+
+/* header*/
+
+.flux {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+@media (max-width: 500px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    
+}
+
+.list-links {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo {
+    width: 8rem;
+    
+}
+
+a, .fa-trowel {
+    color: rgb(73, 155, 155);
+}
+
+.btn-primary {
+    background-color: rgb(139, 168, 168);
+    border: 1px solid  rgb(73, 155, 155);
+}
+
+.btn-primary:hover, .btn-primary:active{
+    background-color: #256868 !important;
+    border: 1px solid  #256868 !important;
+}
+
+.header .menu-hamburger {
+    display: none;
+    position: absolute;
+    width: 35px;
+    right: 50px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .header .menu-hamburger {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .logo {
+        top: 60px;
+        left:40px;
+        position: absolute;
+        width: 6rem;
+    }
+
+    .nav { 
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255,255,255, 0.2);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    } 
+
+    .mobile-menu {
+        margin-left: 0;
+    }
+
+    .list-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 25px 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* END header*/
+/* START Presentation asso*/
+.presentation-asso, form, .overlay-1{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.7) 0%, rgba(167,201,205,0.7) 40%, rgba(22,105,136,0.7) 100%);
+}
+.presentation-asso {
+    display: flex; 
+    gap:40px;
+    align-items: center;
+    
+}
+
+@media (max-width: 887px) {
+    .presentation-asso {
+        flex-direction: column;
+    }
+}
+
+.bloc-1, .bloc-2, .bloc-3 {
+    line-height: 2.5;
+}
+
+.bloc-1{
+    padding-right: 20px;
+    
+}
+
+.titre-presentation, .presentation-atelier, .lieux {
+    margin-bottom: 40px;
+    text-align : center;
+    
+}
+
+.photo-presentation {
+    width: 55%;
+    flex-shrink: 0;
+}
+
+/* END presentation de l'association*/
+
+
+.truelle {
+    width: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex; 
+    gap: 40px;
+}
+
+
+/* Start presentation ateliers*/
+
+.bloc-2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    
+
+}
+.carousel-control-prev-icon {
+    border-radius: 50% 25% 25% 50%;
+}
+
+.carousel-control-next-icon {
+    border-radius: 25% 50% 50% 25%;
+}
+
+/* start lieux d'action*/
+
+.bloc-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+}
+
+.folio {
+    display: block;
+    width: 300px;
+    padding: 5px;
+    height: 250px;
+}
+
+.overlay-1 {
+    position: absolute;
+    bottom: 0;
+    left: 17px; 
+    overflow: hidden;
+    width: 290px;
+    height: 0;
+    transition: .1s ease;
+    text-align: center;
+    color:rgb(233, 233, 240);
+    font-weight: bold;
+}
+
+.fa-school {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    color: rgb(15, 13, 19);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.container:hover .overlay-1 {
+    height: 30%;
+}
+/* le formulaire*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.msg{
+    margin-left: 25px;
+    
+}
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*PAGE 2*/
+.presentation-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .presentation-card{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.next-form {
+    text-align: center;
+}
+
